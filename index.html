@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/602e4027aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Voyage Image Gallery</h1>
+        <p>Click on the button to change the grid view.</p>
+        <div class="icons">
+            <i class="fa-solid fa-square" onclick="full()"></i>
+            <i class="fa-solid fa-th-large" onclick="twoColumn()"></i>
+            <i class="fa-solid fa-th" onclick="fourColumn()"></i>
+        </div>
+        </div>
+
+        <div class="row">
+            <div id="column1">
+                <img src="image/img-1.jpg" alt="">
+                <img src="image/img-2.jpg" alt="">
+                <img src="image/img-3.jpg" alt="">
+                <img src="image/img-4.jpg" alt="">
+                <img src="image/img-5.jpg" alt="">
+                <img src="image/img-6.jpg" alt="">
+                <img src="image/img-7.jpg" alt="">
+                <img src="image/img-8.jpg" alt="">
+            </div>
+            <div id="column2">
+                <img src="image/img-9.jpg" alt="">
+                <img src="image/img-10.jpg" alt="">
+                <img src="image/img-11.jpg" alt="">
+                <img src="image/img-12.jpg" alt="">
+                <img src="image/img-13.jpg" alt="">
+                <img src="image/img-14.jpg" alt="">
+                <img src="image/img-15.jpg" alt="">
+                <img src="image/img-16.jpg" alt="">
+            </div>
+            <div id="column3">
+                <img src="image/img-17.jpg" alt="">
+                <img src="image/img-18.jpg" alt="">
+                <img src="image/img-19.jpg" alt="">
+                <img src="image/img-20.jpg" alt="">
+                <img src="image/img-21.jpg" alt="">
+                <img src="image/img-22.jpg" alt="">
+                <img src="image/img-23.jpg" alt="">
+                <img src="image/img-24.jpg" alt="">     
+            </div>
+            <div id="column4">
+                <img src="image/img-25.jpg" alt="">
+                <img src="image/img-26.jpg" alt="">
+                <img src="image/img-27.jpg" alt="">
+                <img src="image/img-28.jpg" alt="">
+                <img src="image/img-29.jpg" alt="">
+                <img src="image/img-30.jpg" alt="">
+                <img src="image/img-31.jpg" alt="">
+                <img src="image/img-32.jpg" alt="">
+            </div>
+        </div>
+        <script>
+            function full(){
+                document.getElementById('column1').style.width = '100%';
+                document.getElementById('column2').style.width = '100%';
+                document.getElementById('column3').style.width = '100%';
+                document.getElementById('column4').style.width = '100%';
+            }
+            function twoColumn(){
+                document.getElementById('column1').style.width = '50%';
+                document.getElementById('column2').style.width = '50%';
+                document.getElementById('column3').style.width = '50%';
+                document.getElementById('column4').style.width = '50%';
+            }
+            function fourColumn(){
+                document.getElementById('column1').style.width = '25%';
+                document.getElementById('column2').style.width = '25%';
+                document.getElementById('column3').style.width = '25%';
+                document.getElementById('column4').style.width = '25%';
+            }
+        </script>
+</body>
+</html>
